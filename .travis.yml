@@ -25,4 +25,3 @@ install:
 script:
 - python test_main.py
 - gcloud -q preview app deploy app.yaml --promote
-- python e2e_test.py
