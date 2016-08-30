@@ -1,0 +1,10 @@
+{
+    "name": "dennis/deployment-demo",
+    "authors": [
+        {
+            "name": "Dennis Lin",
+            "email": "evabioz@gmail.com"
+        }
+    ],
+    "require": {}
+}
