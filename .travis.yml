@@ -36,14 +36,13 @@ before_install:
 # [END auth]
 
 install:
+  - echo ls -la .
 # Set the correct project to deploy to
   - gcloud config set project ${GOOGLE_PROJECT_ID}
 # Initizel Laravel project
-  - travis_retry composer install --no-progress --prefer-dist
   - travis_retry composer global require "laravel/envoy=~1.0"
 
 before_script:
-  - echo ls -la .
   - git clone https://github.com/papertank/envoy-deploy.git --branch=master --depth=1
 
 #script:
